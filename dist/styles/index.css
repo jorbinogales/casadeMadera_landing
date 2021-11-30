@@ -1,0 +1,243 @@
+@import url('navbar.css');
+@import url('top.css');
+@import url('target.css');
+@import url('about.css');
+@import url('objetivos.css');
+@import url('footer.css');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Cubano';
+    src: url('./../font/Cubano/Cubano.ttf');
+}
+
+:root{
+    --bg-blue: #5EC2D6;
+    --bg-blue-light:#BAE0E6;
+    --bg-blue-strng: #4571B7;
+    --bg-orange: #F9AF3A;
+    --bg-pink: #F1A3B7;
+    --bg-green: #74BF92;
+    --bg-morado: #A686BD;
+    --bg-gray: #747474;
+}
+
+/* BTN CLASS */
+
+.button{
+    position: relative;
+    color: white;
+    background-color: var(--bg-gray);
+    min-width: 150px;
+    border-radius: 50px;
+    border: 2px double var(--bg-gray);
+    padding: 2px 2px;
+    outline:  inherit !important;
+    cursor: pointer;
+    font-family: 'Calibri';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+button::after,
+button::before{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin:auto;
+}
+
+button::after{
+    right:8px;
+}
+
+button::before{
+    left:8px;
+}
+
+.button:hover{
+    transition: all .5s ease-in-out;
+    background-color: transparent !important;
+    color: var(--bg-gray);
+}
+
+.button:hover::after{
+    background-color: var(--bg-gray);
+}
+
+.button:hover::before{
+    background-color: var(--bg-gray);
+}
+
+.button:hover span{
+    border: 2px solid var(--bg-gray);
+}
+
+.button span{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+/* BUTTONS COLOR */
+
+.button-blue{
+    background-color: var(--bg-blue) !important;
+    border: 2px double var(--bg-blue) !important;
+}
+
+.button-blue:hover{
+    color: var(--bg-blue) !important;
+}
+
+.button-blue:hover span{
+    border: 2px solid var(--bg-blue) !important;
+}
+
+.button-blue:hover::after,
+.button-blue:hover::before{
+    background: var(--bg-blue) !important;
+}
+
+
+.button-green{
+    background-color: var(--bg-green) !important;
+    border: 2px double var(--bg-green) !important;
+}
+
+.button-green:hover{
+    color: var(--bg-green) !important;
+}
+
+.button-green:hover span{
+    border: 2px solid var(--bg-green) !important;
+}
+
+.button-green:hover::after,
+.button-green:hover::before{
+    background: var(--bg-green) !important;
+}
+
+/* ORANGE */
+
+.button-orange{
+    background-color: var(--bg-orange) !important;
+    border: 2px double var(--bg-orange) !important;
+}
+
+.button-orange:hover{
+    color: var(--bg-orange) !important;
+}
+
+.button-orange:hover span{
+    border: 2px solid var(--bg-orange) !important;
+}
+
+.button-orange:hover::after,
+.button-orange:hover::before{
+    background: var(--bg-orange) !important;
+}
+
+/* PINK */
+.button-pink{
+    background-color: var(--bg-pink) !important;
+    border: 2px double var(--bg-pink) !important;
+}
+
+.button-pink:hover{
+    color: var(--bg-pink) !important;
+}
+
+.button-pink:hover span{
+    border: 2px solid var(--bg-pink) !important;
+}
+
+.button-pink:hover::after,
+.button-pink:hover::before{
+    background: var(--bg-pink) !important;
+}
+
+/* MORADO */
+.button-morado{
+    background-color: var(--bg-morado) !important;
+    border: 2px double var(--bg-morado) !important;
+}
+
+.button-morado:hover{
+    color: var(--bg-morado) !important;
+}
+
+.button-morado:hover span{
+    border: 2px solid var(--bg-morado) !important;
+}
+
+.button-morado:hover::after,
+.button-morado:hover::before{
+    background: var(--bg-morado) !important;
+}
+
+
+/* MORADO */
+.button-blue-strong{
+    background-color: var(--bg-blue-strng) !important;
+    border: 2px double var(--bg-blue-strng) !important;
+}
+
+.button-blue-strong:hover{
+    color: var(--bg-blue-strng) !important;
+}
+
+.button-blue-strong:hover span{
+    border: 2px solid var(--bg-blue-strng) !important;
+}
+
+.button-blue-strong:hover::after,
+.button-blue-strong:hover::before{
+    background: var(--bg-blue-strng) !important;
+}
+
+/* FLEX */
+.flex{
+    list-style-type: none;
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.float-right{
+    float: right;
+}
+
+.flex-auto li{
+    margin:auto;
+}
+
+/* TEXT */
+.text-blue-strong{
+    color: var(--bg-blue-strng)
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+
+/* BG */
+
+.bg-morado{
+    background-color: var(--bg-morado);
+}

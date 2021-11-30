@@ -1,0 +1,35 @@
+#top{
+    position: relative;
+    min-height: 800px;
+}
+
+#top #top-img{
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    position: absolute;
+    right:0px;
+    top:50px;
+}
+
+#top-img-aside{
+    position: absolute;
+    left:0px;
+    display: block;
+    max-width: 300px;
+}
+
+#top .text{
+    margin-left:100px;
+}
+
+#top h2{
+    color: var(--bg-blue-strng);
+    font-size: 50px;
+    margin-top:150px;
+    font-weight: bold;
+}
+
+#top h2 span{
+    font-family: 'Cubano';
+}

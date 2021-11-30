@@ -1,0 +1,41 @@
+#about .row{
+    position: relative;
+    border-radius: 25px;
+}
+
+#about #malala{
+    display: block;
+    width: 100%;
+}
+
+#about #circles{
+    position: absolute;
+    max-width: 100px;
+    top:-20px;
+    left:-20px;
+}
+
+#about #semicircle{
+    position: absolute;
+    max-width: 50px;
+    bottom:-50px;
+    right:50px;
+}
+
+#about h2{
+    color:white;
+    font-size: 55px;
+    margin-left:50px;
+    margin-top:100px;
+    font-family: 'Calibri';
+}
+
+#about h2 span{
+    font-family: 'Cubano';
+}
+
+#about p{
+    color:white;
+    font-size: 17px;
+    margin-top:50px;
+}

@@ -1,0 +1,8 @@
+nav{
+    display: block !important;
+    width: 100%;
+}
+
+nav ul{
+    max-width: 1000px;
+}
