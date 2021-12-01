@@ -10,9 +10,18 @@
     margin: 0;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 @font-face {
     font-family: 'Cubano';
     src: url('./../font/Cubano/Cubano.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./../font/Lato/Lato-Regular.ttf');
 }
 
 :root{
@@ -27,7 +36,6 @@
 }
 
 /* BTN CLASS */
-
 .button{
     position: relative;
     color: white;
@@ -41,10 +49,15 @@
     font-family: 'Calibri';
     font-weight: bold;
     letter-spacing: 1px;
+    text-decoration: center;
+    max-width: 200px;
+    text-align: center;
 }
 
-button::after,
-button::before{
+.button::after,
+.button::before,
+.input::after,
+.input::before{
     content: '';
     display: block;
     width: 8px;
@@ -57,11 +70,13 @@ button::before{
     margin:auto;
 }
 
-button::after{
+.button::after,
+.input::after{
     right:8px;
 }
 
-button::before{
+.button::before,
+.input::before{
     left:8px;
 }
 
@@ -240,4 +255,78 @@ button::before{
 
 .bg-morado{
     background-color: var(--bg-morado);
+}
+
+.bg-blue{
+    background-color: var(--bg-blue);
+}
+
+/* INPUT */
+.input{
+    position: relative;
+    background-color: inherit;
+    border: 2px solid var(--bg-blue-strng);
+    padding: 5px 3px;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.input::before,
+.input::after{
+    background-color: var(--bg-blue-strng) !important;
+}
+
+.input input{
+    display: block;
+    width:85%;
+    border:none;
+    padding: 10px 5px;
+    margin:auto;
+    outline: none;
+    margin-left:10%;
+    color: var(--bg-blue-strng);
+    font-family: 'Lato';
+    border-radius: 25px;
+}
+
+
+.input input::placeholder{
+    color: var(--bg-blue-strng);
+    font-family: 'Lato';
+}
+
+.input-white{
+    background-color: white !important;
+}
+
+.input-white::after,
+.input-white::before{
+    background: white !important;
+}
+
+
+.input .icon{
+    position: absolute;
+    left: 25px;
+    top:0px;
+    bottom:0px;
+    display: block;
+    margin:auto;
+}
+
+/* TEXT */
+
+.text-cubano{
+    font-family: 'Cubano';
+}
+
+.text-lato{
+    font-family: 'Lato';
+}
+
+
+/* WIDTHS */
+
+.w-100{
+    width: 100% !important;
 }
