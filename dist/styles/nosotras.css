@@ -1,0 +1,68 @@
+#top-nosotras{
+    position: relative;
+    min-height: 550px;
+    overflow: hidden;
+}
+
+#top-nosotras .border-left-image{
+    position: absolute;
+    top:0px;
+    right:0px;
+    display: block;
+    max-width: 200px;
+}
+
+#team-nosotras .row{
+    max-width: 1200px;
+    margin:auto;
+    background-image: url('./../img/nosotras/background.png');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#team-nosotras .row img{
+    width: 100%;
+    max-width: 250px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#team-nosotras .semicircle{
+    position: absolute;
+    bottom:-50px;
+    right: 100px;
+    max-width: 50px;
+}
+
+#profesoras .border-pink{
+    position: absolute;
+    left:0px;
+    max-width: 200px;
+}
+
+#profesoras .box{
+    padding: 5px;
+    border: 5px solid var(--bg-morado);
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom:20px;
+    min-height: 250px;
+}
+
+#profesoras .box:hover{
+    background-color: var(--bg-morado);
+    transition: all .5s ease-in-out;
+}
+
+#profesoras .box img{
+    display: block;
+    width: 100%;
+    margin:auto;
+}
+
+#profesoras .box:hover img{
+    width: 70%;
+    transition: all .5s ease-in-out;
+}
+
