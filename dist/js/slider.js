@@ -5,7 +5,8 @@ $('#next').click(function(){
     $('#flechas_negras').addClass('move-left');
     $('#carousel-item-'+position).removeClass('active');
     position = position+1;
-    if(position > 12){
+    const items =  $('.item-slider');
+    if(position > items.length){
         position = 1;
     }
     $('#carousel-item-'+position).addClass('active');
@@ -20,9 +21,10 @@ $('#previus').click(function(){
     $('#flechas_blancas').addClass('move-right');
     $('#flechas_negras').addClass('move-left');
     $('#carousel-item-'+position).removeClass('active');
+    const items =  $('.item-slider');
     position = position-1;
     if(position == 0){
-        position = 12;
+        position = items.length;
     }
     $('#carousel-item-'+position).addClass('active');
     setTimeout(function(){

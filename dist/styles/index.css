@@ -21,6 +21,12 @@ a{
     position: relative;
 }
 
+.container{
+    position:relative;
+    width: 70% !important;
+    margin:auto;
+}
+
 @font-face {
     font-family: 'Cubano';
     src: url('./../font/Cubano/Cubano.ttf');

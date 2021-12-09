@@ -3,9 +3,10 @@
     border-radius: 25px;
 }
 
-#about #malala{
+#about .malala{
     display: block;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 #about #circles{
@@ -37,5 +38,5 @@
 #about p{
     color:white;
     font-size: 17px;
-    margin-top:50px;
+    margin-top: 50px;
 }
