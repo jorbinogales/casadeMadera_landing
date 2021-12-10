@@ -31,7 +31,7 @@
                 </a>
             </li>
             <li>
-                <button class="button button-orange">
+                <button type="button" class="button button-orange" data-toggle="modal" data-target="#exampleModal">
                     <span>NIVELES</span>
                 </button>
             </li>
@@ -43,9 +43,11 @@
                 </a>
             </li>
             <li>
-                <button class="button button-green">
-                    <span>PREGUNTAS</span>
-                </button>
+                <a href="./preguntas.html">
+                    <button class="button button-green">
+                        <span>PREGUNTAS</span>
+                    </button>
+                </a>
             </li>
             <li>
                 <button class="button button-orange">
@@ -54,6 +56,37 @@
             </li>
         </ul>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content p-5">
+            <div>
+                <ul class="d-block m-auto">
+                    <li class="p-3">
+                        <a href="primer_nivel.html">
+                            <button class="button button-orange d-block m-auto" style="max-width:200px">
+                                <span>NIVEL 1</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="p-3">
+                        <a href="segundo_nivel.html">
+                            <button class="button button-blue d-block m-auto" style="max-width:200px">
+                                <span>NIVEL 2</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="p-3">
+                        <button class="button button-morado d-block m-auto" style="max-width:200px">
+                            <span>NIVEL 3</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
 
     
     <section id="top">

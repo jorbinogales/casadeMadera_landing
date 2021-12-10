@@ -10,13 +10,97 @@
     <link rel="stylesheet" href="./dist/lib/material/css/material.css.map">
     <link rel="stylesheet" href="./dist/lib/material/css/material.min.css.map">
     <link rel="stylesheet" href="./dist/styles/index.css">
+    <link rel="stylesheet" href="./dist/styles/preguntas.css">
 </head>
 <body class="bg-blue">
+        
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black p-4">
+        <a class="navbar-brand font-rubik text-white" href="#">
+            <img src="./dist/img/logo.png" alt="" id="logo">
+        </a>
+        <ul class="flex flex-wrap float-right flex-auto w-100">
+            <li>
+                <a href="./index.html">
+                    <button class="button button-blue">
+                        <span>CASA</span>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <button type="button" class="button button-orange" data-toggle="modal" data-target="#exampleModal">
+                    <span>NIVELES</span>
+                </button>
+            </li>
+            <li>
+                <a href="./nosotras.html">
+                    <button class="button button-pink">
+                        <span>NOSOTROS</span>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="./preguntas.html">
+                    <button class="button button-green">
+                        <span>PREGUNTAS</span>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <button class="button button-orange">
+                    <span>CONTACTO</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content p-5">
+            <div>
+                <ul class="d-block m-auto">
+                    <li class="p-3">
+                        <a href="primer_nivel.html">
+                            <button class="button button-orange d-block m-auto" style="max-width:200px">
+                                <span>NIVEL 1</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="p-3">
+                        <a href="segundo_nivel.html">
+                            <button class="button button-blue d-block m-auto" style="max-width:200px">
+                                <span>NIVEL 2</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="p-3">
+                        <button class="button button-morado d-block m-auto" style="max-width:200px">
+                            <span>NIVEL 3</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
     <div class="container-fluid">
         <div class="row mt-5">
-            <img src="./dist/img/preguntas/Asset 1@2x.png" alt="">
+            <div class="col-12">
+                <div class="content">
+                    <form action="">
+                        <h3 class="text-orange text-cubano text-center">PREGUNTAS</h3>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button type="submit" class="button button-blue-strong">
+                            <span>ENVIAR</span>
+                        </button>
+                    </form>
+                    <img src="./dist/img/preguntas/girl.png" alt="" class="girl">
+                </div>
+            </div>
         </div>
-  
     </div>
 </body>
 </html>

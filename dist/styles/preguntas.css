@@ -1,0 +1,64 @@
+
+.content{
+    display:block;
+    margin:auto;
+    max-width: 800px;
+    left:0px;
+    right:0px;
+    position:relative;
+    background-color: var(--bg-blue-strng);
+    border-radius: 6px;
+    max-width: 700px;
+    margin:auto;
+    box-shadow: 15px 20px 0px 5px #E5DCD6;
+    margin-top:50px;
+    padding: 25px 50px;
+}
+
+.content form{
+    display:block;
+    width: 100%;
+    position:relative;
+}
+
+.content .girl{
+    width: 100%;
+    position: absolute;
+    bottom:-200px;
+    right: -200px;
+    max-width: 150px;
+}
+
+.content button[type="submit"]{
+    position:relative;
+    margin:auto;
+    left:0px;
+    right:0px;
+    top: 100px;
+    display:block;
+    max-width: 250px;
+}
+
+.content textarea{
+    background: white;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    display:block;
+    width: 100%;
+    padding: 50px 15px 15px 15px;
+    background-image: url('../img/preguntas/form.png');
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+.content h3{
+    position: relative;
+    top:50px;
+}
+
+body{
+    background-image: url('./../img/preguntas/Asset\ 3@2x.png');
+    background-size: cover;
+    background-position: center;
+}
